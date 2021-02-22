@@ -1,0 +1,12 @@
+<div class="card">
+    <img [src]="heroeInput.img" class="card-img-top" [alt]="heroeInput.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{ heroeInput.nombre }}</h5>
+        <p class="card-text">{{ heroeInput.bio }}</p>
+        <p class="card-text"><small class="text-muted">{{ heroeInput.aparicion }}</small></p>
+        <!-- <button class="btn btn-outline-primary btn-block"> -->
+            <button class="btn btn-outline-primary btn-block" (click)="verHeroe(indexTest)">
+            Ver más
+        </button>
+    </div>
+</div>
